@@ -2,7 +2,7 @@
   "name": "react-sliding-puzzle",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/afnecors/react-sliding-puzzle",
+  "homepage": "https://afnecors.github.io/react-sliding-puzzle",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.2.0",

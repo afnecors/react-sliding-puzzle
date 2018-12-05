@@ -181,7 +181,8 @@ class Board extends Component {
       <div id={ x + "_" + y} 
       className="square" 
       draggable="true"
-      onDragEnd={ ((e)=> this.handleClick(e, { x: x, y: y})) }
+      onTouchEnd={ ((e)=> this.handleClick(e, { x: x, y: y})) }
+      onClick={ ((e)=> this.handleClick(e, { x: x, y: y})) }
       style={ style }>
       { boardData[x][y].n === 0 ? null : boardData[x][y].n }
       </div>

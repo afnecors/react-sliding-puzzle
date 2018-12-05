@@ -165,6 +165,10 @@ class Board extends Component {
     this.findingNeighbors(pos.x, pos.y);
   }
 
+  preventPulltToRefresh(e) {
+    e.preventDefault();
+  }
+
   renderSquare (x, y) {
     const { boardData } = this.props;
 
@@ -181,6 +185,7 @@ class Board extends Component {
       <div id={ x + "_" + y} 
       className="square" 
       draggable="true"
+      onTouchStart={ ((e)=> this.preventPulltToRefresh (e) }
       onTouchEnd={ ((e)=> this.handleClick(e, { x: x, y: y})) }
       onClick={ ((e)=> this.handleClick(e, { x: x, y: y})) }
       style={ style }>

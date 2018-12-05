@@ -185,7 +185,7 @@ class Board extends Component {
       <div id={ x + "_" + y} 
       className="square" 
       draggable="true"
-      onTouchStart={ ((e)=> this.preventPulltToRefresh (e) }
+      onTouchStart={ ((e)=> this.preventPulltToRefresh (e)) }
       onTouchEnd={ ((e)=> this.handleClick(e, { x: x, y: y})) }
       onClick={ ((e)=> this.handleClick(e, { x: x, y: y})) }
       style={ style }>
